@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter List - My Study Life</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chapters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <a href="../index.html" class="logo">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>My Study Life</span>
+        </a>
+        <ul class="nav_links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="question_bank.html">Question Bank</a></li>
+            <li><a href="logout.html" class="logout-btn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <header class="chapters-header">
+        <div class="container header-content">
+            <div class="header-main">
+                <a href="#" id="back-subject" class="back-link">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Subjects
+                </a>
+                <h1 id="subject-display-name">Mathematics</h1>
+                <p id="class-display-name">Class 1 Standard • Textbook Lessons</p>
+            </div>
+            <div class="stats-overview">
+                <div class="stat-pill">
+                    <span class="label">Total Chapters:</span>
+                    <span class="value" id="total-chapters">12</span>
+                </div>
+                <div class="stat-pill progress-pill">
+                    <span class="label">Progress:</span>
+                    <div class="progress-bar-small">
+                        <div class="progress-fill" style="width: 15%"></div>
+                    </div>
+                    <span class="value">15%</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="chapters-container">
+            <div class="chapter-list">
+                <!-- Chapter 1 -->
+                <div class="chapter-item completed">
+                    <div class="chapter-number">01</div>
+                    <div class="chapter-info">
+                        <h3>Numbers 1 to 10 (எண்கள் 1 முதல் 10)</h3>
+                        <p>Learn to identify, write and count numbers up to 10 with fun visuals.</p>
+                        <div class="chapter-meta">
+                            <span><i class="fa-solid fa-clock"></i> 45 mins</span>
+                            <span><i class="fa-solid fa-video"></i> 3 Videos</span>
+                            <span><i class="fa-solid fa-file-lines"></i> 2 Worksheets</span>
+                        </div>
+                    </div>
+                    <div class="chapter-action">
+                        <a href="#" class="btn-start">Review <i class="fa-solid fa-check"></i></a>
+                    </div>
+                </div>
+
+                <!-- Chapter 2 -->
+                <div class="chapter-item in-progress">
+                    <div class="chapter-number">02</div>
+                    <div class="chapter-info">
+                        <h3>Counting Objects (எண்ணிக்கை)</h3>
+                        <p>Practice counting real-world items, animals, and fruits.</p>
+                        <div class="chapter-meta">
+                            <span><i class="fa-solid fa-clock"></i> 30 mins</span>
+                            <span><i class="fa-solid fa-video"></i> 2 Videos</span>
+                        </div>
+                    </div>
+                    <div class="chapter-action">
+                        <a href="#" class="btn-start accent">Continue <i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <!-- Chapter 3 -->
+                <div class="chapter-item">
+                    <div class="chapter-number">03</div>
+                    <div class="chapter-info">
+                        <h3>Basic Addition (அடிப்படை கூட்டல்)</h3>
+                        <p>Introduction to adding small numbers using pictures.</p>
+                        <div class="chapter-meta">
+                            <span><i class="fa-solid fa-clock"></i> 60 mins</span>
+                            <span><i class="fa-solid fa-video"></i> 4 Videos</span>
+                        </div>
+                    </div>
+                    <div class="chapter-action">
+                        <a href="#" class="btn-start locked">Locked <i class="fa-solid fa-lock"></i></a>
+                    </div>
+                </div>
+
+                <!-- Chapter 4 Mock -->
+                <div class="chapter-item">
+                    <div class="chapter-number">04</div>
+                    <div class="chapter-info">
+                        <h3>Shapes and Sizes (வடிவங்கள்)</h3>
+                        <p>Understanding circles, squares, and triangles around us.</p>
+                        <div class="chapter-meta">
+                            <span><i class="fa-solid fa-clock"></i> 40 mins</span>
+                        </div>
+                    </div>
+                    <div class="chapter-action">
+                        <a href="#" class="btn-start locked">Locked <i class="fa-solid fa-lock"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-card learning-material">
+                    <h3>Learning Resources</h3>
+                    <ul class="resource-list">
+                        <li><a href="#"><i class="fa-solid fa-file-pdf"></i> PDF Textbook</a></li>
+                        <li><a href="#"><i class="fa-solid fa-file-excel"></i> Daily Planner</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-play"></i> Intro Video</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-card teacher-tip">
+                    <h3><i class="fa-solid fa-lightbulb"></i> Study Tip</h3>
+                    <p>Practice writing numbers every morning for 10 minutes to improve memory!</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="question_bank.html">Question Bank</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="faq.html">FAQs & Help</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <div><i class="fa-solid fa-location-dot"></i> 111/1,Kamarajar Street, Chennai</div>
+                    <div><i class="fa-solid fa-phone"></i> +91 9360649867</div>
+                    <div><i class="fa-solid fa-envelope"></i> help@mystudylife.com</div>
+                </div>
+                <div class="social-icons-footer">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Subscribe to our Newsletter</h3>
+                <div class="newsletter-box">
+                    <p>Subscribe now and join our growing community of learners committed to lifelong education!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+                <div class="copyright">
+                    &copy; My Study Life, All Right Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const subject = urlParams.get('subject');
+        const classNum = urlParams.get('class');
+
+        if (subject) {
+            document.getElementById('subject-display-name').textContent = subject;
+            document.getElementById('back-subject').href = `subjects.html?class=${classNum}`;
+
+            if (classNum) {
+                document.getElementById('class-display-name').textContent = `Class ${classNum} Standard • Textbook Lessons`;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

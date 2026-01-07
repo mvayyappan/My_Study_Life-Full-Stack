@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Subject - My Study Life</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/subjects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <a href="../index.html" class="logo">
+            <i class="fa-solid fa-user-graduate"></i>
+            <span>My Study Life</span>
+        </a>
+        <ul class="nav_links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="question_bank.html">Question Bank</a></li>
+            <li><a href="logout.html" class="logout-btn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <header class="subjects-header">
+        <a href="primary.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i> Back to Classes
+        </a>
+        <div class="container">
+            <h1 id="class-title">Primary Subjects</h1>
+            <p id="class-subtitle">Explore subjects and start your lesson today.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="subjects-grid">
+            <a href="chapters.html?subject=Mathematics&class=1" class="subject-card math">
+                <div class="subject-icon">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3>Mathematics</h3>
+                <p>Numbers, shapes, and basic operations made easy.</p>
+                <div class="btn-learn">Explore Chapters <i class="fa-solid fa-chevron-right"></i></div>
+            </a>
+
+            <a href="chapters.html?subject=English&class=1" class="subject-card english">
+                <div class="subject-icon">
+                    <i class="fa-solid fa-spell-check"></i>
+                </div>
+                <h3>English</h3>
+                <p>Improve reading, writing, and grammar skills.</p>
+                <div class="btn-learn">Explore Chapters <i class="fa-solid fa-chevron-right"></i></div>
+            </a>
+
+            <a href="chapters.html?subject=Science&class=1" class="subject-card science">
+                <div class="subject-icon">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+                <h3>Science (EVS)</h3>
+                <p>Discover the wonders of the world around us.</p>
+                <div class="btn-learn">Explore Chapters <i class="fa-solid fa-chevron-right"></i></div>
+            </a>
+
+            <a href="chapters.html?subject=Tamil&class=1" class="subject-card tamil">
+                <div class="subject-icon">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+                <h3>Tamil</h3>
+                <p>Learn the beauty of the Tamil language and literature.</p>
+                <div class="btn-learn">Explore Chapters <i class="fa-solid fa-chevron-right"></i></div>
+            </a>
+
+            <a href="chapters.html?subject=ComputerScience&class=1" class="subject-card computer">
+                <div class="subject-icon">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <h3>Computer Science</h3>
+                <p>Introduction to technology and digital literacy.</p>
+                <div class="btn-learn">Explore Chapters <i class="fa-solid fa-chevron-right"></i></div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="question_bank.html">Question Bank</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="faq.html">FAQs & Help</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <div><i class="fa-solid fa-location-dot"></i> 111/1,Kamarajar Street, Chennai</div>
+                    <div><i class="fa-solid fa-phone"></i> +91 9360649867</div>
+                    <div><i class="fa-solid fa-envelope"></i> help@mystudylife.com</div>
+                </div>
+                <div class="social-icons-footer">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Subscribe to our Newsletter</h3>
+                <div class="newsletter-box">
+                    <p>Subscribe now and join our growing community of learners committed to lifelong education!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-bottom">
+                <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+                <div class="copyright">
+                    &copy; My Study Life, All Right Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update the page title based on the selected class
+        const urlParams = new URLSearchParams(window.location.search);
+        const classNum = urlParams.get('class');
+
+        if (classNum) {
+            const classTitle = document.getElementById('class-title');
+            const classSubtitle = document.getElementById('class-subtitle');
+
+            let suffix = 'th';
+            if (classNum == '1') suffix = 'st';
+            if (classNum == '2') suffix = 'nd';
+            if (classNum == '3') suffix = 'rd';
+
+            classTitle.textContent = `${classNum}${suffix} Standard Subjects`;
+            classSubtitle.textContent = `Choose a subject to begin your ${classNum}${suffix} Standard curriculum.`;
+        }
+    </script>
+
+</body>
+
+</html>

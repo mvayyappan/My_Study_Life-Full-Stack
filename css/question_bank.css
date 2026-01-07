@@ -1,0 +1,125 @@
+:root {
+    --qb-primary: #6366f1;
+    --qb-secondary: #4f46e5;
+    --qb-bg: #f8fafc;
+    --qb-card-bg: #ffffff;
+    --qb-text: #1e293b;
+    --qb-text-light: #64748b;
+}
+
+.qb-hero {
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+    color: white;
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+.qb-hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.qb-hero p {
+    font-size: 20px;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.qb-search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.qb-search-input {
+    width: 100%;
+    padding: 18px 25px 18px 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.qb-search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--qb-text-light);
+}
+
+.qb-section {
+    padding: 80px 0;
+    background: var(--qb-bg);
+}
+
+.qb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.qb-card {
+    background: var(--qb-card-bg);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.qb-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: var(--qb-primary);
+}
+
+.qb-card i {
+    font-size: 40px;
+    color: var(--qb-primary);
+    margin-bottom: 20px;
+}
+
+.qb-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--qb-text);
+}
+
+.qb-card p {
+    color: var(--qb-text-light);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.qb-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #eef2ff;
+    color: var(--qb-primary);
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.section-label {
+    text-align: center;
+    color: var(--qb-primary);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.qb-section h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--qb-text);
+}
